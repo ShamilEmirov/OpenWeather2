@@ -1,11 +1,11 @@
 let input = document.querySelector(".input")
+let key = "e0da5243946afc5821c88e2545c8268c";
 input.addEventListener('change', () => {
     let city = input.value;
-    let key = "e0da5243946afc5821c88e2545c8268c";
-    input = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric`;
-    fetch(input)
-    .then((response) => response.json())
-    .then((data) => {
+    url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric`;
+    fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
             let degree = document.querySelector(".degree")
             let main = document.querySelector(".main")
             let city_mauto = document.querySelector(".city_mauto")
@@ -14,9 +14,9 @@ input.addEventListener('change', () => {
             main.innerHTML = data.weather[0].main;
             let img = document.querySelector("img")
             img.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
-            
-            })
-    })
-    .catch(() => {
-        console.log('!');
-    })
+
+        })
+        .catch(() => {
+            console.log('!');
+        })
+})
