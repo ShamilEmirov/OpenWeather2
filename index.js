@@ -1,5 +1,5 @@
-let input = document.querySelector(".input")
 let key = "e0da5243946afc5821c88e2545c8268c";
+let input = document.querySelector(".input")
 input.addEventListener('change', () => {
     let city = input.value;
     url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric`;
