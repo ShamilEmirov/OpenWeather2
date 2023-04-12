@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 250px;
+    height: 500px;
+    background: linear-gradient(180deg, #48C6EF, #6F86D6);
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px;
+}
+
+.box_opacity {
+    height: 100%;
+    background: rgba(229, 232, 238, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+    border: 1px solid rgba(139, 175, 237, 0.45);
+    color: white;
+    padding-top: 20px;
+}
+
+.city_mauto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-style: italic;
+
+}
+
+.input {
+    padding: 5px 10px;
+    text-align: center;
+    font-style: italic;
+    text-align: center;
+    margin: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(167, 188, 225, 0.45);
+    background-color: rgba(167, 188, 225, 0.45);
+
+    color: white;
+
+
+}
+
+.degree {
+    height: 100px;
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.main {
+    height: 100px;
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+}
+
+.icon img {
+    width: 100px;
+}
